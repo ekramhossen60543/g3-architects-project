@@ -121,6 +121,53 @@ main > section {
   font-weight: 400;
   margin-bottom: 45px;
 }
+/* Feature section related styles */
+.feature {
+  gap: 140px;
+  align-items: center;
+}
+.feature-info {
+  max-width: 586px;
+}
+#feature-section-title {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-info-description {
+  margin-bottom: 30px;
+}
+.feature-card {
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.feature-img {
+  /* position: relative; */
+}
+.feature-image img {
+  width: 100%;
+}
+
+#experience-badge {
+  padding: 45px 42px;
+  text-align: center;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experience-year {
+  font-weight: 700;
+  font-size: 4rem;
+}
+#experience {
+  font-weight: 500px;
+  font-size: 1.56rem;
+}
 /* Some fact related styles */
 .some-facts {
   flex-direction: column;
@@ -161,6 +208,7 @@ main > section {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  margin-bottom: 122px;
 }
 .sponsor-info {
   max-width: 542px;
@@ -174,17 +222,32 @@ main > section {
 .sponsor-companies img {
   filter: grayscale(100%);
 }
+/* Footer related style */
+.footer {
+  max-width: 1440px;
+  margin: 0px auto;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  background-color: #fff4e7;
+  padding: 40px 0px;
+}
 /* Responsive for small devices */
 @media screen and (max-width: 576px) {
   .navbar,
   .nav-links,
-  .teams {
+  .teams,
+  .feature,
+  .feature {
     flex-direction: column;
   }
   .team-img-container,
   .facts-container,
   .sponsor-companies {
     grid-template-columns: 1fr;
+  }
+  .banner-content {
+    margin: 0px 20px 50px 20px;
   }
   .facts-container {
     justify-items: center;
@@ -199,10 +262,21 @@ main > section {
   .some-facts {
     margin: 0px 20px;
   }
+  .feature {
+    margin: 0px 20px;
+  }
+  .our-sponsors {
+    margin: 100px 20px;
+  }
+  #experience-badge {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
 }
 /* Responsive for medium devices */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  .teams {
+  .teams,
+  .feature {
     flex-direction: column;
   }
   .facts-container {
@@ -213,5 +287,9 @@ main > section {
   .sponsor-companies {
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+  }
+  #experience-badge {
+    margin-top: 50px;
+    margin-left: 20%;
   }
 }
